@@ -1,0 +1,13 @@
+.a{font-size:50px;}
+.b{font-weight:600;}
+.c{font-style:italic;}
+.d{line-height:300%;}
+.e{font-family:dotum,"돋움",sans-serif;}
+.f{text-indent:100px;}
+.g{text-decoration:line-through;color:gray;}
+.h{letter-spacing:10px;}
+.i{word-spacing:20px;}
+.j{text-align:justify;border:1px solid red;
+width:600px;}
+.k{word-break: keep-all;}
+.l{text-transform:lowercase;}
