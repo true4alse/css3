@@ -1,0 +1,20 @@
+.box{
+    border:1px solid red;
+    display:none;
+}
+.box2{
+    
+    height:500px;
+    /* background-color:gold;
+    background-image:url("../img/woman.jpg");
+    background-repeat:no-repeat;
+    background-position:100% 0%;
+    background-size:contain; */
+    /* background-color:Red; */
+    background:url("../img/woman.jpg") no-repeat 0 0/ 200px auto;
+    background-attachment:fixed;
+    /* 
+        css에서는 축약형 표현을 먼저 한 뒤 개별속성 표현을 하는것이 좋다
+    */
+    
+}

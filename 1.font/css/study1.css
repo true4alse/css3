@@ -1,13 +1,21 @@
-.a{font-size:50px;}
+html{font-size:25px;}
+body{font-size:30px;}
+.a{
+    font-size:2rem;
+}
+/* 
+    1rem - html태그에 적용된 글씨크기
+    2em - 부모태그의 설정된 글씨크기의 2배
+*/
 .b{font-weight:600;}
 .c{font-style:italic;}
 .d{line-height:300%;}
 .e{font-family:dotum,"돋움",sans-serif;}
 .f{text-indent:100px;}
-.g{text-decoration:line-through;color:gray;}
+.g{text-decoration:underline;color:gray;}
 .h{letter-spacing:10px;}
 .i{word-spacing:20px;}
 .j{text-align:justify;border:1px solid red;
 width:600px;}
 .k{word-break: keep-all;}
-.l{text-transform:lowercase;}
+.l{text-transform:capitalize;}
