@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <link rel="stylesheet" href="./css/study2.css">
+</head>
+<body>
+    <h1>float</h1>
+    <p>선택한 태그를 공중에 붕~ 띄워서 부모공간안에서 왼쪽 혹은 오른쪽에 배치하는 방법</p>
+    <p>float된 태그(공중에 떠있는 태그)는 부모태그 입장에서는 집나간 자식태그로 인식됨 -> 부모태그의 높이가 그만큼 줄어듬</p>
+    <p>그래서 부모태그의 높이를 auto를 유지한 상태에서 float된 태그가 자유롭게 배치 될 수 있게 하기 위해서는 반드시 clear속성을 사용하여 float상태를 해제해야함</p>
+    <p>clear속성을 사용할 수 있는 태그는 float된 태그들보다 다음에 만들어진 형제태그여야만 함 -> 그래서 보통 부모태그의 마지막 자식태그로 clear속성을 사용할 태그를 만듬</p>
+    <p>float되어있는 태그들은 나란히 배치될 공간이 부족하게 된다면 아래로줄바꿈되어서 배치된다</p>
+    <hr>
+    <h1>clear</h1>
+    <p>clear속성이 적용된 태그는 앞서만들어진 형제태그들 중에서 float가 되어서 붕떠있는 태그들을 탐색하여 부모태그의 공간안에서 가장 아래 내려와있는 float태그 바로 밑에 배치가 된다</p>
+    <ul>
+        <li>clear:left</li>
+        <li>clear:right</li>
+        <li>clear:both</li>
+    </ul>
+
+    <div class="wrap">
+       <div class="a">A</div>
+       <div class="b">B</div>
+       <div class="c">C</div>
+       <!-- <div class="clearbox"></div> -->
+    </div>
+    <p class="next">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo iusto delectus, et nulla obcaecati magni impedit nam eum sint earum pariatur rem quam blanditiis quod aut similique vitae itaque.</p>
+
+
+</body>
+</html>
