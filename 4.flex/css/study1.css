@@ -7,11 +7,28 @@
     display:flex;
     flex-direction:row;
     justify-content:flex-start;
-    align-items:stretch;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap; */
+    /* align-content:center; */
+    /* align-items:center; */
 }
 .box>div{
     border:1px solid blue;
-    width:50%;
-    box-sizing: border-box;
+    flex-basis:250px;
+    flex-grow:1;
+    /* width:50%; */
+    /* box-sizing: border-box; */
+}
+.box>div:nth-of-type(1){
+    order:4;
+    align-self:flex-end;
+    flex-grow:4;
+}
+.box>div:nth-of-type(2){order:3;}
+.des{
+    width:1200px;
+    margin:0 auto;
+    border:1px solid red;
+}
+.des *{
+    margin:8px 0;
 }
