@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>flex</h1>
+    <p>블록레벨태그들을 나란히 배치하기위한 레이아웃 배치방법</p>
+
+    <div class="box">
+        <div>
+            <h2>A</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iste porro corrupti vero quidem perspiciatis debitis! Fugit error facilis, provident dolorum aut vitae odit aliquid nam deleniti atque quidem sequi.</p>
+        </div>
+        <div>
+            <h2>B</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem minus voluptatum, incidunt at eos atque beatae, eligendi soluta, pariatur quo aperiam facere fugiat sapiente. Enim numquam facere explicabo magni et?</p>
+        </div>
+        <div>
+            <h2>C</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, minus itaque, autem molestias deserunt ipsa voluptates dolorum dolore id earum dicta aliquam. Facere a sapiente minus ipsum, dignissimos veniam sed.</p>
+        </div>
+        <div>
+            <h2>D</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta odit non unde aliquid eum debitis sunt, hic officia odio praesentium minima dolorum eos minus voluptatem? Voluptatem accusantium at amet perferendis.</p>
+        </div>
+    </div>
+
+    <h2>flex-container(display:flex를 지정한부모태그)에 지정하는 속성</h2>
+    <ul>
+        <li>
+            <h2>flex-direction - 메인축의 방향을 결정하는 css속성</h2>
+            <p>부모태그에 display:flex를 설정하면 flex-container성격을 갖게되면서 왼쪽에서 오른쪽으로 메인축이 형성되며, 수직한 방향으로 수직축이 형성된다 수직축은 위에서 아래로 방향을 갖고 있다. 이 때 자식태그들인 flex-item들은 무조건 메인축을 따라서 나란히 배치되는 특성을 갖는다.</p>
+            <ul>
+                <li>row(기본값) => 메인축의 방향을 좌->우로 설정</li>
+                <li>row-reverse => 메인축의 방향을 우->좌로 설정</li>
+                <li>column => 메인축의 방향을 위->아래로 설정</li>
+                <li>column-reverse => 메인축의 방향을 아래->위로 설정</li>
+            </ul>
+        </li>
+        <li>
+            <h2>justify-content - 메인축 기준으로 아이템을 정렬</h2>
+            <ul>
+                <li>flex-start(기본값) => 메인축의 시작점으로 아이템을 정렬</li>
+                <li>flex-end => 메인축의 끝점으로 아이템을 정렬</li>
+                <li>center => 메인축 기준 중앙에 아이템을 정렬</li>
+                <li>space-between => flex컨테이너 양끝에 아이템을 딱 맞춘 상태에서 flex컨테이너의 남은 공간여백을 똑같이 나눔하여 정렬</li>
+                <li>space-around => flex컨테이너의 남은 공간여백을 각각의 아이템 좌우로 같은 여백으로 사용하여 정렬</li>
+            </ul>
+        </li>
+        <li>
+            <h2>align-items - 수직축 기준으로 아이템을 정렬</h2>
+            <ul>
+                <li>stretch(기본값) => flex컨테이너의 높이 만큼 아이템을 수직축방향을 따라 길게 늘림</li>
+                <li>flex-start => 수직축의 시작점에 아이템을 정렬</li>
+                <li>flex-end => 수직축의 끝점에 아이템을 정렬</li>
+                <li>center => 수직축의 중앙에 아이템을 정렬</li>
+            </ul>
+        </li>
+        <li>
+            <h2>flex-wrap - 메인축 기준으로 정렬되는 아이템들의 줄바꿈 규칙을 변경</h2>
+            <ul>
+                <li>nowrap(기본값) => 아이템들이 메인축을 따라 정렬될 때 절대 줄바꿈되지 않는다. flex-item들은 유연하게 크기가 결정되며 width속성을 통해 너비를 지정할 수는 있으나 상황에 맞게 width속성이 적용되지 않을 때가 있다 그 이유는 기본값이 줄바꿈을 허용하지 않는 것을 더 우선적으로 적용하기 때문이다</li>
+                <li>wrap => 아이템들이 메인축을 따라 정렬될 때 줄바꿈을 허용한다. 이 때 부터는 기존의 box-model에 의해 정의되던 박스 크기의 엄격한 규칙에 따라 박스의 크기를 계산하기 시작한다.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

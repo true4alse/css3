@@ -1,0 +1,17 @@
+*{margin:0;padding:0;}
+.box{
+    width:1200px;
+    border:1px solid red;
+    margin:0 auto;
+    height:400px;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:wrap;
+}
+.box>div{
+    border:1px solid blue;
+    width:50%;
+    box-sizing: border-box;
+}
