@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>영화 그 이상의 감동 CGV - 예제</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
@@ -19,7 +23,7 @@
                     <div class="logo">
                         <h1>
                             <a href="./index.html"><img src="./img/logoRed.png" alt="cgv홈 로고"></a>
-                            <span>cultureplex</span>
+                            <span class="logoDeco">cultureplex</span>
                         </h1>
                     </div>
                     <nav class="topMenu">
@@ -117,14 +121,14 @@
                     <form class="search">
                         <label for="search">검색창</label>
                         <input type="text" id="search">
-                        <input type="submit">
+                        <input class="btnSearch" type="submit">
                     </form>
                 </div>
             </div>
         </header>
         <div class="mainBanner">
             <div class="innerCon">
-                <video autoplay muted>
+                <video class="mainVideo" autoplay muted>
                     <source src="./video/0314_woongnami_1080X608.mp4" type="video/mp4">
                 </video>
                 <div class="videoDescFloating">
