@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <link rel="stylesheet" href="./css/study1.css">
+</head>
+<body>
+    <h1>transition - 전환</h1>
+    <p>transition전환 속성은 스타일의 변화가 감지되었을 때 중간스타일을 자동으로 표현해주는 css의 속성이다</p>
+    <p>transition전환속성은 변하기 전스타일에 설정해주어야 한다</p>
+
+    <h1>transform - 변형</h1>
+    <p>태그를 이동하거나 회전하거나 기울기를 바꿔주는 등 여러가지 변형을 할 수 있는 속성</p>
+    <h2>translate</h2>
+    <p>이동할 때 사용하는 transform의 속성 값 x축 y축 이동할 수 있다</p>
+    <div class="box">
+        <div class="a">translate-box</div>
+    </div>
+    <h2>rotate</h2>
+    <p>평면 회전할 때 rotate(20deg)</p>
+    <div class="b">rotate-box</div>
+    <div class="persBox">
+        <div class="c">rotate-3d-box</div>
+    </div>
+    <h2>scale</h2>
+    <p>가로배율 혹은 세로배율을 변형하고자 할 때</p>
+    <div class="d">scale-box</div>
+
+    <h3>정리</h3>
+    <p>transition속성을 사용하여 중간스타일을 자동으로 애니메이션화 시킬 수 있다. 이 transition속성은 변하기전에 미리 설정되어있어야 스타일의 변화를 감지하고 중간스타일을 표현한다.</p>
+    <p>transform변형은 x축y축으로 이동하거나 평면회전 또는 x축y축을 기준으로 입체회전을 할 수 있다. scale값을 통해 원래크기 대비 원하는 배율로 크기를 조정할 수 있다. 어떠한 변형이든 입체적인 변형을 하려고할 때는 반드시 부모태그에 원근감(perspective)를 조성해주어야만 입체적인 변형을 표현할 수 있다.</p>
+
+</body>
+</html>
